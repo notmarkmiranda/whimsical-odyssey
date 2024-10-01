@@ -1,0 +1,7 @@
+
+<h1>Sign up</h1>
+<%= form_with model: @user, url: sign_up_path do |form| %>
+  <%= form.label :email, class: "form-label" %>
+  <%= form.text_field :email, class: "form-control" %>
+  <%= form.submit "Continue", class: "btn btn-primary" %>
+<% end %>
